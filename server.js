@@ -5,7 +5,7 @@ const productRoutes = require('./routes/productRoutes')
 
 
 const app = express();
-const PORT = 8000;
+const PORT = 9000;
 
 const DBURI =  'mongodb://localhost:27017/Shopdatabase'
 mongoose.connect(DBURI)
