@@ -7,6 +7,10 @@ const productRoutes = require('./routes/productRoutes')
 const app = express();
 const PORT = 9000;
 
+app.get('/', function (req, res) {
+    res.send('shopping cart ap running')
+})
+
 const DBURI =  'mongodb://localhost:27017/Shopdatabase'
 mongoose.connect(DBURI)
     .then((result) => {
